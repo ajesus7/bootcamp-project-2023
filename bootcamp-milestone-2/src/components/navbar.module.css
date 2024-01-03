@@ -38,7 +38,7 @@
   padding: 12px;
 }
 
-.nav-list a:hover {
+.navList a:hover {
   text-decoration: underline;
   background: rgb(250, 249, 246);
   color: #3a5a40;
@@ -48,4 +48,39 @@
   padding-left: 20px;
   width: 215px;
   height: auto;
+}
+
+@media (max-width: 850px) {
+  .navbar ul {
+    font-size: 12px;
+  }
+  .navbar a {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 750px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .navList {
+    position: relative;
+    top: 12px;
+    right: 0px;
+    margin-bottom: 40px;
+  }
+
+  .logo {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar a {
+    padding: 3px;
+  }
 }
