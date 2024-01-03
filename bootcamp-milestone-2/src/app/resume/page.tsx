@@ -11,7 +11,7 @@ export default function Resume() {
       <section className="resume-content">
         <div className="resume-top-content">
           <h1 className="page-title">Resume</h1>
-          <a href="../../../public/resume.pdf" download>
+          <a href="/resume.pdf" download>
             Download Resume
           </a>
         </div>
