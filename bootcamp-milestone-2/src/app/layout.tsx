@@ -4,6 +4,7 @@ import { Inter } from "next/font/google"; // You can change the font to anything
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] });
 require("dotenv").config();
@@ -24,6 +25,7 @@ export default function RootLayout({
       <Navbar />
       <body className={inter.className}>{children}</body>
       <Analytics />
+      <SpeedInsights />
       <Footer />
     </html>
   );
